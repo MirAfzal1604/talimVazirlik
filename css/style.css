@@ -934,9 +934,9 @@ a {
 }
 
 .feedBack {
-    padding-bottom: 100px;
+    padding-bottom: 70px;
     position: relative;
-    height: 1111px;
+    height: 1860px;
 }
 
 .feedBack::after {
@@ -982,6 +982,10 @@ a {
     position: relative;
 }
 
+.additionalProperty {
+    margin-top: 100px;
+}
+
 .feedbackcomma {
     width: 60px;
     margin: 22px 0;
@@ -991,6 +995,348 @@ a {
     font-size: 30px;
     margin: 10px 0;
     font-weight: bold;
+}
+
+.customFrom {
+    margin: 50px 0 0px 0;
+}
+
+.form-control {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    position: relative;
+    border: 0;
+    outline: 0;
+    text-align: center;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    padding: 22px 15px;
+    width: 100%;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 7%;
+    transform: translate(0%, -30%);
+}
+
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small {
+    color: #e74c3c;
+    text-align: center;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.formTextArea {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    padding: 22px 15px;
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+.formTextArea:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success .formTextArea {
+    border-color: #2ecc71;
+}
+
+.form-control.error .formTextArea {
+    border-color: #e74c3c;
+}
+
+.formBtn {
+    font-size: 18px;
+    background: #4c4083;
+    border: none;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin: 0 auto;
+    transition: all 0.2s ease;
+}
+
+.formBtn:hover {
+    background: #f0f220;
+    color: #4c4083;
+}
+
+.footerBox {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin: 90px 0;
+}
+
+.footerBox a {
+    width: 300px;
+    color: #6a7c92;
+    font-size: 14px;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 12px rgba(224, 224, 224, 0.5);
+    margin: 6px;
+    padding: 40px 50px;
+    transition: all 0.2s ease;
+}
+
+.footerBox a:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 12px rgba(154, 152, 152, 0.5);
+}
+
+.footerBox a img {
+    margin: 0 auto;
+    display: block;
+    height: 100px;
+}
+
+.footerBox a h1 {
+    font-size: 15px;
+    color: #47495a;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 40px 0 10px 0;
+}
+
+.footerlinks {
+    width: 95%;
+    margin: 75px 0 0 0;
+    position: relative;
+}
+
+.sliderBox {
+    color: #595959;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 0 20px;
+    word-break: break-word;
+}
+
+.sliderBox .imageBox {
+    width: 110px;
+    height: 110px;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 10px auto;
+    background: #fff;
+    padding: 10px;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.sliderBox:hover .imageBox {
+    border-color: #4c4083;
+    box-shadow: 0 0 0 10px rgba(76, 64, 131, 0.5);
+}
+
+.sliderBox .imageBox img {
+    width: 100%;
+}
+
+.footerLogo::before {
+    content: '';
+    position: absolute;
+    background: url("../img/logoBottom.png") no-repeat;
+    width: 600px;
+    height: 600px;
+    z-index: -1;
+    bottom: -498px;
+    left: 745px;
+}
+
+.footer {
+    height: 960px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 820px;
+    left: 0;
+    right: 0;
+    background: #4c4083;
+    width: 100%;
+    height: 100%
+}
+
+.footer .fContent {
+    position: relative;
+    display: flex;
+    padding-top: 188px;
+}
+
+.footer .fContent::after {
+    content: '';
+    position: absolute;
+    background: url("../img/footerLogo.png") no-repeat;
+    width: 540px;
+    height: 658px;
+    right: -180px;
+    top: 588px;
+    z-index: 0;
+}
+
+.footer .fContent::before {
+    content: '';
+    background: url("../img/footerBg.png") no-repeat;
+    width: 2942px;
+    height: 1105px;
+    position: absolute;
+    top: 0;
+    left: -350px;
+    background-position: center center;
+}
+
+.footer .fContent>* {
+    z-index: 1;
+    position: relative;
+}
+
+.footer .mainBlock {
+    width: 418px;
+    padding-right: 100px;
+    margin-left: 100px;
+    margin-right: 64px;
+    border-right: 1px solid #fff;
+}
+
+.footer .mainBlock .footerLogoImg {
+    margin: 0 0 30px 0;
+}
+
+.footer .mainBlock h1 {
+    font-weight: bold;
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+
+.footer .mainBlock h2 {
+    font-weight: 100;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.footer .footerContactsBox a {
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.footer .footerContactsBox a:hover {
+    color: #f0f220;
+}
+
+.footer .footerContactsBox a i {
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+}
+
+.footer .footerContactsBox a span {
+    margin-left: 20px;
+}
+
+.simpleBlock {
+    width: 324px;
+    padding: 210px 40px;
+}
+
+.simpleBlock ul::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.simpleBlock .dashed li a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    bottom: 0;
+    left: 0;
+    background: #4bce61;
+}
+
+.simpleBlock .dashed li a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    bottom: 0;
+    left: 0;
+    background: #4bce61;
+}
+
+.simpleBlock li a:hover {
+    color: #f0f220;
+}
+
+.simpleBlock li a {
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.simpleBlock li a i {
+    margin-right: 15px;
+    font-size: 20px;
 }
 
 @media screen and (max-width:1600px) {
@@ -1175,6 +1521,25 @@ a {
         width: 100%;
         padding: 0;
     }
+    .footerBox {
+        flex-direction: column;
+    }
+    .footerBox a {
+        width: 100%;
+    }
+    .feedBack {
+        height: 2300px;
+    }
+    .simpleBlockUl {
+        display: none;
+    }
+    .simpleBlock {
+        width: 100%;
+    }
+    .footer .mainBlock {
+        margin-left: 50px;
+        margin-right: 27px;
+    }
 }
 
 @media screen and (max-width:769px) {
@@ -1232,6 +1597,31 @@ a {
     .service_box {
         width: 100%;
     }
+    .feedbackArea {
+        width: 100%;
+    }
+    .feedbackArea h1 {
+        font-size: 25px;
+    }
+    .feedBack {
+        height: 2560px;
+    }
+    .simpleBlock {
+        display: none;
+    }
+    .footer .mainBlock {
+        width: 100%;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        border-right: 0px solid #fff;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .feedBack {
+        height: 2680px;
+    }
 }
 
 @media screen and (max-width:369px) {
@@ -1247,5 +1637,14 @@ a {
     }
     .active .schoolContent {
         top: 100px;
+    }
+    .feedBack {
+        height: 2780px;
+    }
+}
+
+@media screen and (max-width:318px) {
+    .feedBack {
+        height: 2850px;
     }
 }
