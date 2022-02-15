@@ -30,3 +30,9 @@ var swiper = new Swiper(".carousel", {
         }
     },
 });
+
+
+var swiper = new Swiper(".feedBackSwiper", {
+    grabCursor: true,
+    loop: true,
+});

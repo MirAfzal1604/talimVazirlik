@@ -773,7 +773,7 @@ a {
 }
 
 .school {
-    min-height: 1500px;
+    min-height: 700px;
     position: relative;
 }
 
@@ -853,6 +853,144 @@ a {
 .active .school_img {
     left: 50%;
     top: 150px;
+}
+
+.boxes {
+    margin: 70px 0;
+}
+
+.box {
+    color: #000;
+    font-size: 25px;
+    transition: color 0.1s ease;
+    background-color: #fff;
+    box-shadow: 0 0 20px #d3d4d4;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    margin: 0 0 20px 0;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #d3d4d4;
+}
+
+.box:hover .box_icons i {
+    color: #4c4083;
+}
+
+.box_img {
+    height: 250px;
+    width: auto;
+    background-image: linear-gradient(146deg, #9089b2 0%, #c4c292 100%);
+    overflow: hidden;
+}
+
+.box_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.boxText {
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+    margin: 36px 0;
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    flex: 1;
+}
+
+.box_icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 0 20px 0;
+}
+
+.box_icons p {
+    font-size: 14px;
+    margin: 0;
+    color: #8a8a8a;
+}
+
+.box_icons i {
+    color: #f0f220;
+    font-size: 25px;
+    transition: color 0.1s ease;
+}
+
+.feedBack {
+    padding-bottom: 100px;
+    position: relative;
+    height: 1111px;
+}
+
+.feedBack::after {
+    content: '';
+    background: url("../img/BOTTOMBg.jpg") center top no-repeat;
+    position: absolute;
+    width: 2699px;
+    height: 1453px;
+    top: -175px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.feedTitle {
+    font-size: 34px;
+    text-align: center;
+    color: #4c4083;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+
+.feedTitle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 15px;
+    width: 230px;
+    background: #f7f889;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.feedbackArea {
+    width: 740px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    color: #151d41;
+    position: relative;
+}
+
+.feedbackcomma {
+    width: 60px;
+    margin: 22px 0;
+}
+
+.feedbackArea h1 {
+    font-size: 30px;
+    margin: 10px 0;
+    font-weight: bold;
 }
 
 @media screen and (max-width:1600px) {
@@ -1007,6 +1145,9 @@ a {
     .main1 {
         padding: 40px 30px;
     }
+    .school {
+        min-height: 480px;
+    }
     .school .school_img {
         display: none;
     }
@@ -1094,6 +1235,9 @@ a {
 }
 
 @media screen and (max-width:369px) {
+    .school {
+        min-height: 520px;
+    }
     .schoolContent h1 {
         font-size: 24px;
     }
