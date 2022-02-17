@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <title>Document</title>
+    <title>uzedu</title>
 </head>
 
 <body>
@@ -121,7 +121,20 @@
                                 </ul>
                                 <div class="additionalFunctions">
                                     <img src="./img/eye.png" alt="eye" class="eyeicon">
-                                    <img src="./img/search.png" alt="search" class="searchicon">
+                                    <img src="./img/search.png" alt="search" onclick="openSearch()" class="searchicon">
+
+                                    <div id="myOverlay">
+                                        <span class="closebtn" onclick="closeSearch()"><i class="fas fa-times"></i></span>
+                                        <div class="overlay-content">
+                                            <form class="hidden_form">
+                                                <input type="text" class="hidden_input" placeholder="Search.." name="search" required />
+                                                <button class="hidden_submit">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
 
@@ -158,8 +171,8 @@
                         <div class="dropdown langBar">
                             <button class="borderedBtn dropbtn" onclick="openLang()" type="button">O'z</button>
 
-                            <div id="w4" class="dropdown-menu-right dropdown-menu"><a class="dropdown-item active" href="/uz">O'zbekcha</a>
-                                <a class="dropdown-item" href="#">Ўзбекча</a>
+                            <div id="w4" class="dropdown-menu-right dropdown-menu">
+                                <a class="dropdown-item active" href="#">O'zbekcha</a>
                                 <a class="dropdown-item" href="#">Русский</a>
                                 <a class="dropdown-item" href="#">English</a>
                             </div>
@@ -264,7 +277,7 @@
         <div class="container">
             <div class="afterHeader">
                 <div class="main1">
-                    <img src="./img/logoVertical.png" alt="mainBg">
+                    <img src="./img/logoVertivalDark.png" alt="mainBg">
 
                     <a href="#">
                         <i class="fab fa-facebook-f"></i>
@@ -290,7 +303,7 @@
                     </div>
                     <h1>O'quvchilarga</h1>
                     <p>
-                        Зачисление в 1 класс Перевод ученика из школы в школу Обучение детей с ограниченными возможностями Портал предложений
+                        Nogiron bolalarni maktabdan maktabga o‘tkazish bo‘yicha 1-sinfga ro‘yxatdan o‘tish taklif portali
                     </p>
                     <button type="button">
                        <a href="#">Batafsil</a>
@@ -303,7 +316,7 @@
                     </div>
                     <h1>Ota-onalarga</h1>
                     <p>
-                        Зачисление в 1 класс Перевод ученика из школы в школу Обучение детей с ограниченными возможностями Портал предложений
+                        Nogiron bolalarni maktabdan maktabga o‘tkazish bo‘yicha 1-sinfga ro‘yxatdan o‘tish taklif portali
                     </p>
                     <button type="button">
                        <a href="#">Batafsil</a>
@@ -316,7 +329,7 @@
                     </div>
                     <h1>Oʻqituvchilarga</h1>
                     <p>
-                        Зачисление в 1 класс Перевод ученика из школы в школу Обучение детей с ограниченными возможностями Портал предложений
+                        Nogiron bolalarni maktabdan maktabga o‘tkazish bo‘yicha 1-sinfga ro‘yxatdan o‘tish taklif portali
                     </p>
                     <button type="button">
                        <a href="#">Batafsil</a>
@@ -353,7 +366,7 @@
                                     <p class="boxText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, distinctio.</p>
                                 </div>
                                 <div class="box_icons">
-                                    <p>04 Obtabr</p>
+                                    <p>04 Oktyabr</p>
                                     <i class="fas fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -370,7 +383,7 @@
                                     <p class="boxText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, distinctio.</p>
                                 </div>
                                 <div class="box_icons">
-                                    <p>04 Obtabr</p>
+                                    <p>04 Oktyabr</p>
                                     <i class="fas fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -387,7 +400,7 @@
                                     <p class="boxText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, distinctio.</p>
                                 </div>
                                 <div class="box_icons">
-                                    <p>04 Obtabr</p>
+                                    <p>04 Oktyabr</p>
                                     <i class="fas fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -404,7 +417,7 @@
                                     <p class="boxText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, distinctio.</p>
                                 </div>
                                 <div class="box_icons">
-                                    <p>04 Obtabr</p>
+                                    <p>04 Oktyabr</p>
                                     <i class="fas fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -421,7 +434,7 @@
                                     <p class="boxText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, distinctio.</p>
                                 </div>
                                 <div class="box_icons">
-                                    <p>04 Obtabr</p>
+                                    <p>04 Oktyabr</p>
                                     <i class="fas fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -438,7 +451,7 @@
                                     <p class="boxText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, distinctio.</p>
                                 </div>
                                 <div class="box_icons">
-                                    <p>04 Obtabr</p>
+                                    <p>04 Oktyabr</p>
                                     <i class="fas fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -455,7 +468,7 @@
                                     <p class="boxText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, distinctio.</p>
                                 </div>
                                 <div class="box_icons">
-                                    <p>04 Obtabr</p>
+                                    <p>04 Oktyabr</p>
                                     <i class="fas fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -594,7 +607,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="formBtn">Submit</button>
+                    <button class="formBtn">Yuborish</button>
                 </form>
 
 
@@ -694,7 +707,7 @@
                             <div class="swiper-slide ">
                                 <a class="sliderBox " target="_blank " href="# ">
                                     <div class="imageBox ">
-                                        <img alt="image " src="./img/gov.uz ">
+                                        <img alt="image " src="./img/gov.uz">
                                     </div>
                                     O'zbekiston Respublikasi Konstitutsiyasi
                                 </a>
@@ -732,7 +745,7 @@
                         <i class="fab fa-facebook-f"></i>
                         <span>@uzedu</span>
                     </a>
-                    <a href="https://t.me/uzedu" target="_blank">
+                    <a href="#" target="_blank">
                         <i class="fab fa-telegram-plane"></i>
                         <span>@uzedu</span>
                     </a>
@@ -749,18 +762,18 @@
 
             <div class="simpleBlock">
                 <ul class="dashed">
-                    <li><a href="/uz/page/cookie">Cookie siyosati</a></li>
-                    <li><a href="/uz/page/privacy">Xavfsizlik siyosati</a></li>
-                    <li><a href="/uz/page/terms">Foydalanish shartlari</a></li>
-                    <li><a href="/uploads/uzedu_guide_ru.pdf">Veb-saytdan foydalanish bo'yicha qo'llanma</a></li>
+                    <li><a href="#">Cookie siyosati</a></li>
+                    <li><a href="#">Xavfsizlik siyosati</a></li>
+                    <li><a href="#">Foydalanish shartlari</a></li>
+                    <li><a href="#">Veb-saytdan foydalanish bo'yicha qo'llanma</a></li>
                 </ul>
             </div>
 
             <div class="simpleBlock simpleBlockUl">
                 <ul>
-                    <li><a href="/uz/static/request"><i class="fas fa-comment-alt"></i> Fuqarolarning murojaatlari</a></li>
-                    <li><a href="/uz/documents/open-data"><i class="fas fa-database"></i> Ochiq ma'lumotlar</a></li>
-                    <li><a href="/uz/static/site-map"><i class="fas fa-sitemap"></i> Sayt xaritasi</a></li>
+                    <li><a href="#"><i class="fas fa-comment-alt"></i> Fuqarolarning murojaatlari</a></li>
+                    <li><a href="#"><i class="fas fa-database"></i> Ochiq ma'lumotlar</a></li>
+                    <li><a href="#"><i class="fas fa-sitemap"></i> Sayt xaritasi</a></li>
                 </ul>
             </div>
         </div>
@@ -775,6 +788,7 @@
     <script src="./js/reveal.js "></script>
     <script src="./js/forUrl.js "></script>
     <script src="./js/form.js "></script>
+    <script src="./js/searchBox.js"></script>
 </body>
 
 </html>
